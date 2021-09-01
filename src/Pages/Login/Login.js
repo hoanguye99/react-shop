@@ -96,7 +96,7 @@ const Login = () => {
         <span className="w-1/5 border-b dark:border-gray-400 lg:w-1/5"></span>
     </div>
 
-    <div className="flex items-center mt-6 -mx-2">
+    {/* <div className="flex items-center mt-6 -mx-2">
         <button type="button"
             className="flex items-center justify-center w-full px-6 py-2 mx-2 text-sm font-medium text-white transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:bg-blue-400 focus:outline-none">
             <svg className="w-4 h-4 mx-2 fill-current" viewBox="0 0 24 24">
@@ -116,7 +116,7 @@ const Login = () => {
                 </path>
             </svg>
         </a>
-    </div>
+    </div> */}
         <p className="mt-8 text-xs font-light text-center text-gray-400"> Do not have an account? <a href="#"
         className="font-medium text-gray-800 dark:text-gray-200 hover:underline">Create One</a></p>
 </div>

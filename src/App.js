@@ -7,6 +7,7 @@ import ProductDetail from './Pages/Products/ProductDetail';
 import AuthVerify from './common/auth-verify';
 import { Order } from './Pages/Order/Order';
 import User from './Pages/User/User';
+import UserInformation from './Pages/UserInformation/UserInformation';
 import login from './Components/Login/login';
 import {Footer} from './Components/Footer/Footer';
 import "@material-tailwind/react/tailwind.css";
@@ -15,12 +16,13 @@ function App() {
   return (
     <div>
       <div>
-        <Header />
+        <Header/>
         <Switch>
           <Route path='/products/:productName' component={ProductDetail} />
           {/* <Route path='/products' component={Product} /> */}
           <Route path='/orders' component={Order} />
           <Route path='/user' component={User} />
+          <Route path='/userinfo' component={UserInformation} />
           <Route path='/login' component={login} />
           <Route path='/' component={Home} />
         </Switch>
