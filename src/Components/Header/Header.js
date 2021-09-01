@@ -6,6 +6,10 @@ import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { logout } from '../../actions/auth';
 import { IoMdLogOut } from 'react-icons/io';
+import Dropdown from "@material-tailwind/react/Dropdown";
+import DropdownItem from "@material-tailwind/react/DropdownItem";
+import DropdownLink from "@material-tailwind/react/DropdownLink";
+
 
 const Header = () => {
   const state = useSelector(state => state.auth);
@@ -186,10 +190,10 @@ const Header = () => {
                 </div>
               </Link>
               {/* <!-- Mobile menu button --> */}
-              <div className="flex md:h">
+              <div className="flex lg:h">
                 <button
                   type="button"
-                  className="md:hidden text-gray-800  dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400 "
+                  className="md:hidden menu-list text-gray-800  dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400 "
                   aria-label="toggle menu"
                 >
                   <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current">
@@ -207,8 +211,8 @@ const Header = () => {
               <div className="flex flex-col md:flex-row md:items-center md:mx-8  ">
                 <div className=" lg:flex hidden">
                   <a
-                    href="#"
-                    className="px-2 py-1 mx-2 mt-2 text-md font-medium text-gray-800 transition-colors duration-200 transform rounded-md md:mt-0 dark:text-gray-200 hover:bg-gray-300 "
+                    href="/home"
+                    className=" px-2 py-1 mx-2 mt-2 text-md font-medium text-gray-800 transition-colors duration-200 transform rounded-md md:mt-0 dark:text-gray-200 hover:bg-gray-300 "
                   >
                     Home
                   </a>
@@ -237,7 +241,8 @@ const Header = () => {
                     Contact
                   </a>
                 </div>
-                <div className=" lg:flex hidden ">
+                {/* Search box */}
+                <div className=" hidden lg:flex ">
                   <span className=" inset-y-0 left-0 flex items-center pl-3 ">
                     <svg
                       className="w-4 h-4 text-gray-700 dark:text-gray-300 hover:text-black"
@@ -261,7 +266,8 @@ const Header = () => {
                 </div>
               </div>
 
-              <div className=" lg:flex hidden">
+              {/* Order Icon */}
+              <div className=" hidden lg:flex">
                 <button
                   className=" mx-4 text-gray-700 md:block dark:text-gray-200 hover:text-gray-700 dark:hover:text-gray-400 focus:text-gray-700 dark:focus:text-gray-400 focus:outline-none"
                   aria-label="show notifications"
@@ -281,7 +287,8 @@ const Header = () => {
                   </Link>
                 </button>
 
-                <div className="p-3 text-gray-700 ">
+                {/* User icon */}
+                <div className="hidden lg:flex p-3 text-gray-700 ">
                   <Link to="/user">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
