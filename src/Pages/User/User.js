@@ -16,8 +16,8 @@ const Login = () => {
   };
 
   return (
-    <div className="relative bg-yellow-50 w-screen h-screen">
-      <div className="relative bg-red-200 w-full max-w-xs mx-auto">
+    <div className="relative bg-white w-screen h-screen">
+      <div className="relative bg-white w-full max-w-xs mx-auto">
         <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" onSubmit={handleLogin}>
           <div className="mb-4">
             <label className="block text-gray-700 text-sm font-bold mb-2" >

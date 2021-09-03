@@ -5,10 +5,6 @@ import './header.css';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { logout } from '../../actions/auth';
-import { IoMdLogOut } from 'react-icons/io';
-import Dropdown from "@material-tailwind/react/Dropdown";
-import DropdownItem from "@material-tailwind/react/DropdownItem";
-import DropdownLink from "@material-tailwind/react/DropdownLink";
 
 
 const Header = () => {
@@ -289,7 +285,7 @@ const Header = () => {
 
                 {/* User icon */}
                 <div className="hidden lg:flex p-3 text-gray-700 ">
-                  <Link to="/user">
+                  <Link to="/login">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-6 w-6 hover:text-black "
