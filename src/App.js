@@ -4,12 +4,12 @@ import Home from './component/Home/Home';
 import Header from './component/Header/Header';
 import ProductDetail from './component/Products/ProductDetail';
 import AuthVerify from './common/auth-verify';
-import { Order } from './Components/Order/Order';
-import User from './Components/User/User';
+import { Order } from './component/Order/Order';
+import User from './component/User/User';
 import Login from './Pages/Login/Login';
 import Purchase from './component/Purchase/Purchase';
-import UserInformation from './Components/UserInformation/UserInformation';
-import {Footer} from './Components/Footer/Footer';
+import UserInformation from './component/UserInformation/UserInformation';
+import {Footer} from './component/Footer/Footer';
 
 import "@material-tailwind/react/tailwind.css";
 
